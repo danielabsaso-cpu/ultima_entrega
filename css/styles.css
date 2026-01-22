@@ -1,0 +1,94 @@
+:root{
+    --pri: hsla(115, 84%, 63%, 0.89);
+    --sec: #f7f59f;
+    --dark: #115200;
+    --card-bg: #f0f0f0d8;
+    --muted: #666;
+}
+
+*{box-sizing: border-box}
+body{
+    font-family: Inter, system-ui, Arial, sans-serif;
+    margin:0; background: var(--sec); color: var(--dark);
+    line-height:1.35;
+}
+header{
+    background: linear-gradient(90deg,#0b74de33,#ffffff);
+    padding: 18px 24px;
+    text-align:center;
+    border-bottom: 1px solid #e6e9ee;
+}
+header h1{ margin:0; font-size:1.25rem}
+.sub{ margin:6px 0 0;color:var(--muted); font-size:0.95rem}
+
+.container{
+    display: grid;
+    grid-template-columns: 1fr 340px;
+    gap: 18px;
+    padding: 18px;
+    max-width: 1100px;
+    margin: 18px auto;
+}
+
+.panel{
+    background: var(--card-bg);
+    border-radius: 8px;
+    padding: 14px;
+    box-shadow: 0 2px 6px rgba(20,30,40,0.05);
+}
+
+.grid{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px,1fr));
+    gap: 12px;
+}
+
+.producto{
+    border:1px solid #eef2f6;
+    padding:10px;
+    border-radius:6px;
+}
+.producto h3{margin:0 0 6px;font-size:1rem}
+.producto p{margin:0 0 8px;color:var(--muted);font-size:0.95rem}
+.btn{
+    display:inline-block;
+    border:none;
+    padding:8px 10px;
+    border-radius:6px;
+    cursor:pointer;
+    font-weight:600;
+}
+.btn-pri{ background:var(--pri); color:white; }
+.btn-sec{ background:#eee; color:var(--dark); margin-right:8px; }
+
+#carrito-lista .item{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:8px 6px;
+    border-bottom:1px dashed #eceff3;
+}
+.item .meta{font-size:0.95rem}
+.item button{ margin-left:10px }
+
+.resumen{ margin-top:12px; display:flex; align-items:center; justify-content:space-between; gap:8px; flex-wrap:wrap }
+
+.mensaje{ color:var(--muted); font-size:0.95rem; margin-bottom:8px}
+
+.mensaje-exito {
+    padding: 10px;
+    background: #d8ffd8;
+    border: 1px solid #91d991;
+    border-radius: 6px;
+    color: #165a16;
+    font-weight: 600;
+    text-align: left;
+    margin-top: 10px;
+}
+
+
+footer{ text-align:center; font-size:0.85rem; color:var(--muted); padding:10px 0; border-top:1px solid #f0f2f5 }
+@media (max-width:900px){
+    .container{ grid-template-columns: 1fr; padding:12px }
+    #carrito-panel{ order:-1 }
+}

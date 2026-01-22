@@ -1,0 +1,11 @@
+[
+    { "id": 1, "nombre": "Empanada de J&Q", "precio": 1200, "stock": 12 },
+    { "id": 2, "nombre": "Sándwich de milanesa", "precio": 2500, "stock": 8 },
+    { "id": 3, "nombre": "Alfajor Terrabusi", "precio": 1200, "stock": 8 },
+    { "id": 4, "nombre": "Gaseosa Coca-Cola 500ml", "precio": 1500, "stock": 15 },
+    { "id": 5, "nombre": "Agua mineral 500ml", "precio": 900, "stock": 20 },
+    { "id": 6, "nombre": "Pizza", "precio": 1300, "stock": 6 },
+    { "id": 7, "nombre": "Galletas Oreo", "precio": 1900, "stock": 34 },
+    { "id": 8, "nombre": "Mantecol 460grs", "precio": 3400, "stock": 24 },
+    { "id": 9, "nombre": "Pan bollito x1kg", "precio": 2200, "stock": 8 }
+]
